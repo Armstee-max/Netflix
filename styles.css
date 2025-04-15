@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #180201;
+  color: #d6d4d4;
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+ol,
+ul {
+  margin-bottom: 0;
+}
+li {
+  list-style-type: none;
+}
+.header-one {
+  background: #e10600;
+  height: 35px;
+}
+
+.header-one-box {
+  color: #d6d4d4;
+  font-size: 13px;
+}
+
+.header-one-box,
+box-icon {
+  fill: #d6d4d4;
+}
+
+.header-two .brand img {
+  width: 150px;
+}
+.item-links ul li a {
+  color: #d6d4d4;
+  font-size: 14px;
+}
+
+.item-links ul li a.active {
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid #e10600;
+  padding-bottom: 2px;
+}
+
+.dark-dropdown {
+  background: #343a40;
+  color: #fff;
+  border: none;
+}
+.dark-dropdown .dropdown-item {
+  color: #fff;
+}
+
+.dark-dropdown .dropdown-item:hover {
+  background-color: #495057;
+}
+
+.search-box {
+  max-width: 400px;
+  margin: 15px auto;
+}
+
+.search-input {
+  border-radius: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: inherit;
+  border: 1px solid #d6d4d4;
+  color: #d6d4d4 !important;
+}
+
+.search-input:focus {
+  background-color: inherit !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #d6d4d4 !important;
+  color: #333;
+}
+
+.search-input::placeholder {
+  color: #d6d4d4;
+  opacity: 1;
+  font-size: 13px;
+}
+
+box-icon.box-search {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 23px;
+}
+box-icon.box-microphone {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 23px;
+}
+
+.span-container h1 span {
+  color: #fff;
+  border-bottom: 2px solid #f00;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+/* Target your specific carousel */
+#movieCarousel .carousel-inner {
+  height: 70vh !important;
+}
+
+#movieCarousel .carousel-item {
+  height: 100% !important;
+}
+
+/* Target the position-relative div that contains your image */
+#movieCarousel .carousel-item .position-relative {
+  height: 100% !important;
+}
+
+/* Target the actual image */
+#movieCarousel .carousel-item img.img-fluid {
+  height: 100% !important;
+  object-fit: cover; /* This will maintain aspect ratio while filling */
+  width: 100%;
+}
+
+/* For your specific case with the .gojo div */
+#movieCarousel .carousel-item .gojo {
+  height: 100% !important;
+}
+.movie-carousel .item {
+  height: 250px;
+}
+
+.movie-carousel .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.movie-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 3;
+  transform: translateY(-50%);
+}
+.movie-carousel .owl-nav .owl-prev,
+.movie-carousel .owl-nav .owl-next {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 60px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  background: inherit !important;
+}
+.movie-carousel .owl-nav .owl-prev {
+  left: -33px;
+}
+.movie-carousel .owl-nav .owl-next {
+  right: -33px;
+}
+
+.view-link a {
+  color: #f00;
+}
+
+.customer-carousel .item {
+  background: #800000;
+  border-radius: 15px;
+  padding: 30px 20px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.customer-carousel .item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 0;
+  margin-left: 35%;
+  display: block;
+  border: 5px;
+}
+
+.customer-carousel .profile img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  border: 5px;
+}
+
+.customer-carousel .rating {
+  margin: 10px 0;
+}
+
+.customer-carousel .rating .star-img {
+  width: auto;
+  height: 20px;
+  border-radius: 0;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.customer-carousel h4,
+.customer-carousel h5,
+.customer-carousel p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.customer-carousel h5 {
+  opacity: 0.8;
+}
+
+.customer-carousel .owl-nav .owl-prev,
+.customer-carousel .owl-nav .owl-next {
+  font-size: 40px !important;
+  background: inherit !important;
+  margin-top: 0;
+}
+
+.faq {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+box-icon.enve {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 23px;
+}
+
+.subscribe a {
+  color: #fff;
+  border: 8px solid #f00;
+  border-radius: 50px;
+  background: #f00;
+  transition: 0.5s;
+}
+
+.subscribe a:hover {
+  background: #fff;
+  border: 8px solid #fff;
+  color: #f00;
+}
+
+.subscribe a {
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* width: 23px;
+  height: 23px; */
+}
+
+.foot a {
+  color: #d6d4d4;
+}
+
+.foot {
+  justify-content: space-between;
+  margin-top: 140px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.end {
+  margin-top: 70px;
+}
+
+.gojo img {
+  height: 525px;
+  width: 100%;
+  /* margin-left: 50px; */
+  object-fit: cover;
+}
+.offers ul li {
+  list-style-type: disc;
+  margin: 7px 0px 7px 20px;
+}
+
+.net-mail span {
+  color: #f00;
+  border-bottom: 2px solid #f00;
+}
+
+.accordion {
+  width: 100%;
+  color: #fff;
+  --bs-accordion-border-radius: 8px;
+}
+
+.accordion .accordion-item,
+.accordion .accordion-item .accordion-button {
+  background: inherit;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.accordion-item {
+  border: unset;
+}
+
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.accordion-item:last-of-type > .accordion-collapsed {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.accordion-button {
+  color: #d6d4d4;
+  background: inherit;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-body {
+  color: #e9e7e7;
+}
+
+.get {
+  margin-top: 100px;
+}
+
+@media (max-width: 500px) {
+  .nav-one .item-links {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 767px) {
+  .accordion {
+    max-width: 450px;
+  }
+}
+@media (min-width: 900px) {
+  .mobile-search {
+    display: none !important;
+  }
+}
+
+@media (max-width: 899px) {
+  .nav-two {
+    display: none !important;
+  }
+}
+
+.mobile-header {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: end;
+}
+
+.mobile-header-box {
+  width: 300px;
+  height: 100%;
+  background: #180201;
+  padding: 40px 20px;
+}
+
+.mobile-header.slide-in {
+  transform: translateX(0);
+}

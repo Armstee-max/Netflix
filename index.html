@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial" />
+    <title>Netflix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="style.js"></script>
+  </head>
+  <body>
+    <section class="header">
+      <header>
+        <div class="header-one">
+          <div
+            class="header-one-box container d-flex align-items-center justify-content-end gap-4 h-100"
+          >
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <box-icon type="solid" name="envelope"></box-icon>
+              <p>dgw36learn@gmail.com</p>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <box-icon name="phone-call"></box-icon>
+              <p>+2349069398948</p>
+            </div>
+          </div>
+        </div>
+        <div class="header-two">
+          <div
+            class="container d-flex align-items-center justify-content-between"
+          >
+            <div
+              class="nav-one d-flex align-items-center justify-content-between"
+            >
+              <div class="brand new-brand">
+                <img src="image/brand/netflix_logo.svg" alt="brand" />
+              </div>
+              <div class="item-links">
+                <ul class="d-flex align-items-center gap-2">
+                  <li><a href="#" class="active">Movies</a></li>
+                  <li><a href="#">Shows</a></li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">General</a></li>
+                  <li class="dropdown">
+                    <a
+                      href="#"
+                      class="dropdown-toggle d-flex align-items-center gap-1"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >Plan</a
+                    >
+                    <ul class="dropdown-menu dark-dropdown">
+                      <li><a class="dropdown-item" href="#">Basic</a></li>
+                      <li><a class="dropdown-item" href="#">Standard</a></li>
+                      <li><a class="dropdown-item" href="#">Premuim</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mobile-search">
+              <button id="bars-click" class="btn text-white p-0 m-0">
+                <box-icon name="menu"></box-icon>
+              </button>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-between gap-4 nav-two"
+            >
+              <div class="search-box position-relative">
+                <box-icon name="search-alt" class="box-search"></box-icon>
+                <input
+                  type="search"
+                  class="form-control search-input"
+                  placeholder="search..."
+                />
+                <box-icon
+                  type="solid"
+                  name="microphone"
+                  class="box-microphone"
+                ></box-icon>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between gap-5"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <box-icon name="user"></box-icon>
+                  <p>sign in</p>
+                </div>
+                <div>
+                  <div class="d-flex align-items-center gap-2 dropdown">
+                    <box-icon name="globe"></box-icon>
+                    <p
+                      class="dropdown-toggle d-flex align-items-center gap-1"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      En
+                    </p>
+                    <ul class="dropdown-menu dark-dropdown">
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">Spanish</a></li>
+                      <li><a class="dropdown-item" href="#">French</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-header">
+        <div class="mobile-header-box">
+          <box-icon id="bars-close" name='x'></box-icon>
+          <div class="item-links">
+            <ul class="d-flex flex-column gap-2">
+              <li><a href="#" class="active">Movies</a></li>
+              <li><a href="#">Shows</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">General</a></li>
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle d-flex align-items-center gap-1"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Plan</a
+                >
+                <ul class="dropdown-menu dark-dropdown">
+                  <li><a class="dropdown-item" href="#">Basic</a></li>
+                  <li><a class="dropdown-item" href="#">Standard</a></li>
+                  <li><a class="dropdown-item" href="#">Premuim</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex flex-column mt-3 gap-4">
+            <div class="search-box position-relative">
+              <box-icon name="search-alt" class="box-search"></box-icon>
+              <input
+                type="search"
+                class="form-control search-input"
+                placeholder="search..."
+              />
+              <box-icon
+                type="solid"
+                name="microphone"
+                class="box-microphone"
+              ></box-icon>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-between gap-5"
+            >
+              <div class="d-flex align-items-center gap-2">
+                <box-icon name="user"></box-icon>
+                <p>sign in</p>
+              </div>
+              <div>
+                <div class="d-flex align-items-center gap-2 dropdown">
+                  <box-icon name="globe"></box-icon>
+                  <p
+                    class="dropdown-toggle d-flex align-items-center gap-1"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    En
+                  </p>
+                  <ul class="dropdown-menu dark-dropdown">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="movieCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="position-relative">
+              <img
+                src="/image/movies/backdrops/hard_hit-b.webp"
+                class="img-fluid slide-in-right"
+                alt="Wheel of Time backdrop"
+              />
+
+              <div
+                class="position-absolute top-50 start-0 translate-middle-y text-white p-4 span-container"
+                style="max-width: 100%"
+              >
+                <h1 class="slide-in-left"><span>The</span> Wheel of Time</h1>
+                <p class="slide-in-left delay-200">
+                  Set in a high fantasy world where magic exists, but only some
+                  can access it, a woman named Moiraine crosses path with five
+                  young men and women. This sparks a dangerous, world spanning
+                  journey. Based on the book series by Robert Jordan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="position-relative">
+              <img
+                src="image/movies/backdrops/last_of_us-b.webp"
+                class="img-fluid slide-in-right"
+                alt="Last of Us backdrop"
+              />
+
+              <div
+                class="position-absolute top-50 start-0 translate-middle-y text-white p-4 span-container"
+                style="max-width: 100%"
+              >
+                <h1 class="slide-in-left"><span>Last</span> of us</h1>
+                <p class="slide-in-left delay-200">
+                  The Last of Us follows the journey of Joel and Ellie across a
+                  post-apocalyptic America ravaged by a fungal infection that
+                  turns humans into aggressive creatures. Their initial delivery
+                  mission evolves into a profound bond as they face both
+                  infected threats and dangerous survivor groups while searching
+                  for a possible cure.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="position-relative">
+              <img
+                src="image/movies/backdrops/lost_lands-b.webp"
+                class="img-fluid slide-in-right"
+                alt="img"
+              />
+
+              <div
+                class="position-absolute top-50 start-0 translate-middle-y text-white p-4 span-container"
+                style="max-width: 100%"
+              >
+                <h1 class="slide-in-left"><span>Lost</span> Lands</h1>
+                <p class="slide-in-left delay-200">
+                  "Lost Lands" is a fantasy adventure film following
+                  archaeologist Dr. Elena Marsh and her colleague as they're
+                  transported to a parallel dimension filled with prehistoric
+                  creatures and ancient technology. Their journey through this
+                  breathtaking world becomes a race against time as they battle
+                  a power-hungry general while searching for a way home.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="position-relative">
+              <div class="gojo">
+                <img
+                  src="10828.jpg"
+                  class="img-fluid slide-in-right"
+                  alt="img"
+                />
+              </div>
+
+              <div
+                class="position-absolute top-50 start-0 translate-middle-y text-white p-4 span-container"
+                style="max-width: 100%"
+              >
+                <img src="download-removebg-preview.png" alt="Jujutsu Kaisen" />
+                <p class="slide-in-left delay-200">
+                  Jujutsu Kaisen is a dark fantasy anime and manga series
+                  following Yuji Itadori, a high school student who becomes the
+                  vessel for Ryomen Sukuna, the King of Curses, after consuming
+                  a cursed finger. Under the guidance of powerful sorcerer
+                  Satoru Gojo at Tokyo Jujutsu High School, Yuji and his
+                  classmates battle dangerous cursed spirits while mastering
+                  their abilities to harness cursed energy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#movieCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#movieCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!--TRENDING SHOW SECTION-->
+    <section class="container mt-5 mb-5">
+      <div class="view-link d-flex justify-content-between align-items-center">
+        <p class="fs-4 fw-medium m-0">Trending Shows</p>
+        <a href="#">View all ></a>
+      </div>
+      <div class="mt-4 owl-carousel owl-theme movie-carousel">
+        <div class="item">
+          <a href="#"
+            ><img src="image/movies/posters/amature-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/devil-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/clearner-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/g20-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/ghost-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/hand_maid-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/hard_hit-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/hyper-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/last_of_us-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/lost_lands-p.webp" alt="img"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- ACTION SHOWS -->
+    <section class="container mt-5 mb-5">
+      <div class="view-link d-flex justify-content-between align-items-center">
+        <p class="fs-4 fw-medium m-0">Action Shows</p>
+        <a href="#">View all ></a>
+      </div>
+      <div class="mt-4 owl-carousel owl-theme movie-carousel">
+        <div class="item">
+          <a href="#"
+            ><img src="image/movies/posters/last_of_us-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/hard_hit-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/hyper-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/lost_lands-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/g20-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/novo-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/working-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/ghost-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/last_of_us-p.webp" alt="img"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="image/movies/posters/lost_lands-p.webp" alt="img"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="text-center">
+        <h3 class="mb-4">What customers say</h3>
+        <p>
+          We, at Netflix, aim to incoperate excellence in every aspect of<br />
+          our plans and services. We have gathered a number of awards,<br />
+          accolades and recognition along the way. Here are some<br />
+          customers in views.
+        </p>
+      </div>
+      <div
+        class="owl-carousel owl-theme customer-carousel text-center container"
+      >
+        <div class="item">
+          <div class="profile">
+            <img src="woman.jpeg" alt="img" />
+          </div>
+          <h4>Joe Red</h4>
+          <h5>Manager</h5>
+          <div class="rating">
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+          </div>
+          <p>
+            In our pursuit of this quest, we have gathered a number of awards,
+            accolades and recognition along the way. Here are some customer
+            views.
+          </p>
+        </div>
+        <div class="item">
+          <div class="profile">
+            <img src="man.jpeg" alt="img" />
+          </div>
+          <h4>Donald Ray</h4>
+          <h5>Manager</h5>
+          <div class="rating">
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+          </div>
+          <p>
+            In our pursuit of this quest, we have gathered a number of awards,
+            accolades and recognition along the way. Here are some customer
+            views.
+          </p>
+        </div>
+        <div class="item">
+          <div class="profile">
+            <img src="man_2.jpeg" alt="img" />
+          </div>
+          <h4>Pastor James</h4>
+          <h5>Manager</h5>
+          <div class="rating">
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+          </div>
+          <p>
+            In our pursuit of this quest, we have gathered a number of awards,
+            accolades and recognition along the way. Here are some customer
+            views.
+          </p>
+        </div>
+        <div class="item">
+          <div class="profile">
+            <img src="gojo_3.jpeg" alt="img" />
+          </div>
+          <h4>Gojo Satoru</h4>
+          <h5>Manager</h5>
+          <div class="rating">
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+            <img src="star-removebg-preview.png" alt="star" class="star-img" />
+          </div>
+          <p>
+            In our pursuit of this quest, we have gathered a number of awards,
+            accolades and recognition along the way. Here are some customer
+            views.
+          </p>
+        </div>
+      </div>
+      <div class="text-center faq mb-5">
+        <h3>Frequently Asked Questions</h3>
+      </div>
+      <!-- ACCORDION -->
+      <div class="accordion container" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              What is Netflix and how much does it cost?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Netflix is a streaming platform offering TV shows, movies,
+                documentaries, and original content.</strong
+              >
+              We offer three subscription tiers:
+              <div class="offers">
+                <ul>
+                  <li>Basic: $8.99/month (SD quality, single device)</li>
+                  <li>Standard: $13.99/month (HD quality, two devices)</li>
+                  <li>Premium: $17.99/month (4K+HDR quality, four devices)</li>
+                </ul>
+              </div>
+              <div class="faq-link">
+                <a href="#">see more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              What devices can I use to watch, and what internet speed do I
+              need?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                You can watch on smart TVs, game consoles, computers, tablets,
+                smartphones, and streaming devices like Roku, Amazon Fire TV,
+                and Apple TV. For optimal viewing, we recommend internet speeds
+                of 3 Mbps for SD quality, 5 Mbps for HD quality, and 25 Mbps for
+                4K/Ultra HD quality.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              How do I manage my account (sign-up, cancel, or get support)?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body net-mail">
+              Sign up on our website by clicking <a href="#">Sign Up</a> and
+              following the prompts. To cancel, go to "Account Settings" and
+              select "Cancel Subscription." For any issues, our customer support
+              team is available 24/7 via live chat on our website, email at
+              <span>support@Netflix.com</span>, or by phone at
+              <span>09069398948</span>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center get">
+        <h3>Get in touch</h3>
+        <p>Subsribe to get new offers and notifications on Netflix.</p>
+        <div class="search-box position-relative">
+          <box-icon type="solid" name="envelope" class="enve"></box-icon>
+          <input
+            type="search"
+            class="form-control search-input"
+            placeholder="Enter your email"
+          />
+          <div class="subscribe">
+            <a href="#">Subscribe</a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex foot">
+        <div>
+          <p class="fw-medium">Help Center</p>
+          <div class="fw-lighter">
+            <a href="#">About us</a><br />
+            <a href="#">Reviews & Pricing</a><br />
+            <a href="#">Terms & Conditions</a><br />
+            <a href="#">Privacy & Policy</a><br />
+          </div>
+        </div>
+        <div>
+          <p class="fw-medium">Account</p>
+          <div class="fw-lighter">
+            <a href="#">Ways to watch</a><br />
+            <a href="#">Awards</a><br />
+            <a href="#">Carrers</a><br />
+            <a href="#">Only on Netflix</a><br />
+          </div>
+        </div>
+        <div>
+          <p class="fw-medium">Media</p>
+          <div class="fw-lighter">
+            <a href="#">Terms of use</a><br />
+            <a href="#">Netflix</a><br />
+            <a href="#">Legal Notices</a><br />
+            <a href="#">Updates</a><br />
+          </div>
+        </div>
+      </div>
+      <div class="text-center end">
+        <box-icon type="logo" name="facebook-circle"></box-icon>
+        <box-icon type="logo" name="twitter"></box-icon>
+        <p>
+          copyright @ 2021 - All rights reserved - official website of Netflix.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
