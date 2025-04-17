@@ -46,6 +46,13 @@ box-icon {
 .item-links ul li a {
   color: #d6d4d4;
   font-size: 14px;
+  transition: .5s;
+}
+
+.item-links ul li a:hover {
+  background: #495057;
+  border-right: 500px solid #495057;
+
 }
 
 .item-links ul li a.active {
@@ -289,7 +296,7 @@ box-icon.box-microphone {
 
 box-icon.enve {
   position: absolute;
-  left: 10px;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
   width: 23px;
@@ -312,7 +319,7 @@ box-icon.enve {
 
 .subscribe a {
   position: absolute;
-  right: 1px;
+  right: 13px;
   top: 50%;
   transform: translateY(-50%);
   /* width: 23px;
@@ -326,8 +333,8 @@ box-icon.enve {
 .foot {
   justify-content: space-between;
   margin-top: 140px;
-  margin-right: 200px;
-  margin-left: 200px;
+  /* margin-right: 200px;
+  margin-left: 200px; */
 }
 
 .end {
@@ -463,4 +470,27 @@ box-icon.enve {
 
 .mobile-header.slide-in {
   transform: translateX(0);
+}
+
+.close-bars {
+  background: inherit;
+  border: 0;
+  transition: 0.5s;
+}
+.close-bars:hover {
+  background: #f00;
+}
+ 
+
+/* LINKS ON DESKTOP SITE */
+.item-link ul li a {
+  color: #d6d4d4;
+  font-size: 14px;
+  transition: .5s;
+}
+.item-link ul li a.active {
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid #e10600;
+  padding-bottom: 2px;
 }

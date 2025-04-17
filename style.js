@@ -63,20 +63,27 @@ $(document).ready(function () {
     },
   });
 
-  
   $("#bars-click").click(function () {
     $(".mobile-header").toggleClass("slide-in");
   });
 
-  $("#bars-close").click(function(){
-    $(".mobile-header").removeClass("slide-in")
-  })
+  $("#bars-close").click(function () {
+    $(".mobile-header").removeClass("slide-in");
+  });
 
   // $(".mobile-header").click(function () {
   //   $(this).removeClass("slide-in");
   // });
-  
+
   $(".mobile-header-box").click(function (e) {
     e.stopPropagation();
   });
+});
+
+$(document).ready(function () {
+  alert("Welcome");
+});
+
+$(".subscribe").submit(function (event) {
+  alert("Are you sure?");
 });
